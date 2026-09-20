@@ -1,0 +1,4 @@
+interface:
+  display_name: "一堂 CLI"
+  short_description: "通过 whyai 使用一堂课程与知识服务"
+  default_prompt: "使用 $yitang-cli 完成这个一堂任务，先核对正式 Gateway 和登录状态，再执行匹配的固定 SOP。"
