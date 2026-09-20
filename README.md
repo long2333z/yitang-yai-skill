@@ -5,7 +5,7 @@
 ## 从哪里开始
 
 | 想做的事 | 打开哪一页 |
-| --- | --- | --- |
+| --- | --- |
 | 检查版本、登录、Gateway 或权益 | [先确认能不能用](references/sops/access.md) |
 | 从课程里找到方法，再用到一个真实问题 | [课程到工作](references/sops/scenarios/course-to-work.md) |
 | 用一个或多个 Partner 完成一项交付 | [Partner 协作交付](references/sops/scenarios/partner-delivery.md) |
