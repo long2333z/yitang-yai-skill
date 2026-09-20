@@ -1,4 +1,4 @@
 interface:
   display_name: "一堂 YAI Skill"
-  short_description: "用 whyai 完成一堂 YAI 的课程、Partner、会话与结果整理"
-  default_prompt: "使用 $yitang-yai-skill 完成一项一堂 YAI CLI 任务：先打开对应 SOP，再说明确认结果和待确认项。"
+  short_description: "把一堂课程、Partner 和资产变成可验证的真实工作流"
+  default_prompt: "使用 $yitang-yai-skill：先从课程中挖掘适用方法，再结合 Partner 和真实任务验证，最后沉淀可复用结果。"

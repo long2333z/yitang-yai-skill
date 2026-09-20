@@ -1,13 +1,13 @@
 # 一堂 YAI Skill
 
-用 `whyai` 把一堂 YAI 的课程、Partner 和对话结果用在真实工作里。
+用 `whyai` 连接一堂 YAI，把课程方法、Partner 协作和对话结果用在真实工作里。CLI 是入口，不是终点：先学会方法，再做成结果，最后留下能复用的资产。
 
 ## 从哪里开始
 
 | 想做的事 | 打开哪一页 |
 | --- | --- | --- |
 | 检查版本、登录、Gateway 或权益 | [先确认能不能用](references/sops/access.md) |
-| 找课程、作业或以前的笔记 | [学习与知识](references/sops/learning.md) |
+| 挖课程内容、提炼方法，或把所学用到任务 | [课程方法与知识](references/sops/learning.md) |
 | 选择 Partner，或让多个 Partner 接力 | [Partner 工作](references/sops/partner.md) |
 | 带着材料完成一项工作，并保存结果 | [任务执行与资产](references/sops/execution.md) |
 | 继续、分支、导出、分享或清理对话 | [对话与故障](references/sops/conversation.md) |

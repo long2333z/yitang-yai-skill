@@ -8,6 +8,8 @@
 | [YAI 使用指南](https://yitanger.feishu.cn/wiki/WPJWwKwI3iUCzqkGUzvc6i5MnNg) | 课程知识、Partner、输入、对话和笔记 | [YAI 使用要点](snapshots/yai-guide-2026-09-20.md) |
 | [YAI 一堂第一课](https://yitang.top/fs-doc/217da0c5f7d334b601c53526ed06f90d/MZFMd7mYPofbJ2xQhdEcS3Xrnvd) | 如何把方法、协作和资产变成稳定工作流 | [第一课要点](snapshots/yai-first-class-2026-09-20.md) |
 
+另见 [课程内容挖掘](course-content-discovery-2026-09-20.md)：这是本机通过正式 CLI 做的只读能力观察，不包含账号课程清单或个人数据。
+
 ## 实际操作时以谁为准
 
 1. 本次 CLI 返回、`--help` 和错误原文。

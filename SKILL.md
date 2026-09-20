@@ -1,6 +1,6 @@
 ---
 name: yitang-yai-skill
-description: "当用户需要通过 whyai CLI 使用一堂 YAI 时使用：检查访问状态，查询课程、作业或笔记，选择或继续 Partner 对话，或保存、导出结果。只处理一堂 YAI 专属操作。"
+description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和个人资产用进真实工作时使用。通过 whyai CLI 连接和操作 YAI；先挖掘课程内容、校准方法，再完成任务、复盘并沉淀可复用工作流。"
 ---
 
 # 一堂 YAI Skill
@@ -12,7 +12,7 @@ description: "当用户需要通过 whyai CLI 使用一堂 YAI 时使用：检�
 | 你要做什么 | 先读这里 |
 |---|---|
 | 检查 CLI、Gateway、登录、套餐资格 | [环境准入](references/sops/access.md) |
-| 找课程、读课程章节、查一堂知识，或复盘作业 | [学习与知识](references/sops/learning.md) |
+| 挖课程内容、提炼方法、查课程/作业/笔记，或把所学用到任务 | [课程方法与知识](references/sops/learning.md) |
 | 找官方 Partner、多个 Partner 接力、封装自己的 Partner | [Partner 工作](references/sops/partner.md) |
 | 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](references/sops/execution.md) |
 | 回看、继续、导出对话，或处理命令异常 | [对话与故障](references/sops/conversation.md) |
