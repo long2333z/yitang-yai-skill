@@ -27,3 +27,5 @@ description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和�
 想了解为什么这样做，再看 [任务地图](references/core-sop-map.md) 或 [官方资料](references/official-sources.md)。
 
 读取课程时遇到 ID 不匹配、内容为空，或需要判断该找案例、模板、笔记还是作业，先读 [课程内容挖掘](references/course-content-discovery-2026-09-20.md)。
+
+需要按主题查找全部运行资料时，读 [运行资料索引](references/index.md)。`docs/` 只用于维护和迭代，不参与运行。

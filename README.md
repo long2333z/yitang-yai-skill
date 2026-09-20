@@ -22,11 +22,13 @@
 
 本仓库保留了这三份资料的[阅读整理](references/official-sources.md)，方便理解 SOP 从哪里来。实际操作时，以当前 `--help`、CLI 返回和官方页面为准。
 
+所有运行资料都列在 [运行资料索引](references/index.md)；维护这项 Skill 时再看 [docs](docs/README.md)。
+
 ## 目录说明
 
 ```text
 SKILL.md                         # 给 Codex 的任务入口
 references/                      # 官方资料和任务地图
 references/sops/                 # 每类任务的操作说明
-skill-optimizer-records/         # 维护记录，不需要日常阅读
+docs/                            # 设计、方案、架构和迭代记录，不参与运行
 ```
