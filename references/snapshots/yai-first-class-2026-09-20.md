@@ -1,12 +1,12 @@
 ---
 source: https://yitang.top/fs-doc/217da0c5f7d334b601c53526ed06f90d/MZFMd7mYPofbJ2xQhdEcS3Xrnvd
 captured_at: 2026-09-20
-capture_kind: browser-rendered structured semantic snapshot
-fidelity: Covers the first-class operating model relevant to workflow design; it is not a byte-for-byte document export.
-authority: The live official document remains authoritative.
+capture_kind: 官方页面阅读整理
+fidelity: 覆盖与工作流设计有关的核心内容；不是逐字全文导出。
+authority: 实时官方页面优先。
 ---
 
-# YAI 一堂第一课：工作系统的设计约束
+# YAI 一堂第一课：把它用进工作
 
 ## 三层模型
 
@@ -16,7 +16,7 @@ authority: The live official document remains authoritative.
 | Partner 协作 | 复杂问题要补足上下文、背景、意图、尝试与数据；T/C/P/R 有不同分工。 | 用任务类型和首轮任务契约路由 Partner；保留人工判断。 |
 | CLI/工作流 | 在授权范围内把知识、作业、笔记、对话连接进工作系统；稳定流程才能封装。 | 先验证 CLI 可用与权限；只有被反复验证的流程才进入 SOP 或自建 Partner。 |
 
-## 核心操作证据（意译）
+## 关键做法
 
 ### 1. 随聊随调
 

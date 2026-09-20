@@ -1,15 +1,15 @@
 ---
 name: yitang-yai-skill
-description: "Use for Yitang YAI tasks completed with the whyai CLI: verify access, retrieve YAI course, homework, or note data, work with YAI Partners or conversations, and save or export YAI results. Do not use for general learning advice or unrelated AI/Partner tasks."
+description: "当用户需要通过 whyai CLI 使用一堂 YAI 时使用：检查访问状态，查询课程、作业或笔记，选择或继续 Partner 对话，或保存、导出结果。只处理一堂 YAI 专属操作。"
 ---
 
 # 一堂 YAI Skill
 
-本入口只做意图识别、准入检查和独立 SOP 路由。不要在这里展开课程、Partner、笔记或 CLI 命令手册；按下表只读取一个匹配的独立 SOP。
+先判断要完成什么，再打开一份对应的 SOP。详细命令、示例和官方资料都留在各自页面，不在这里重复。
 
 ## 路由表
 
-| 用户意图 | 读取的 SOP |
+| 你要做什么 | 先读这里 |
 |---|---|
 | 检查 CLI、Gateway、登录、套餐资格 | [环境准入](sops/access.md) |
 | 找课程、读课程章节、查一堂知识，或复盘作业 | [学习与知识](sops/learning.md) |
@@ -17,19 +17,11 @@ description: "Use for Yitang YAI tasks completed with the whyai CLI: verify acce
 | 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](sops/execution.md) |
 | 回看、继续、导出对话，或处理命令异常 | [对话与故障](sops/conversation.md) |
 
-## 共享准入
+## 所有任务都遵守
 
-1. 任何 CLI 业务动作先路由至 SOP-00；浏览器授权页不等于 CLI 可用。
-2. 命令帮助、CLI 返回、真实 ID、Gateway、环境和权益是运行时事实。资料入口见 [官方资料引用](references/official-sources.md)，不能覆盖当前事实。
-3. 需要分析或调整核心 SOP 时，先读取 [核心 SOP 证据映射](references/core-sop-map.md)，再按链接只读必要的一个快照。
+1. 先走 [环境准入](sops/access.md)，再做真实 CLI 调用；浏览器授权完成不代表 CLI 已可用。
+2. 课程、作业、笔记、Partner 和会话的 ID 都从本次返回中取得，不靠猜测。
+3. 上传、创建、分享、删除或发布前，先说清对象和影响，取得用户同意。
+4. 交付时说清三件事：已经确认的事实、自己的判断、还需要确认的内容。
 
-## 共享边界
-
-- 先取真实 ID，再执行下一步；不猜课程、Partner、笔记、作业或会话 ID。
-- `chat`、文件上传、笔记创建、Partner 创建/发布、分享、删除和其他会产生远端记录或额度消耗的操作，先说明范围与影响，并在用户明确授权后执行。
-- 复杂任务优先拆成“背景与目标 → 选择入口/Partner → 完成一件事 → 追问修正 → 结果验收 → 资产沉淀”。
-- 不把“命令成功”“登录成功”“得到回答”直接表述成业务结果已验证；交付时区分事实、推断和未决项，说明实际执行、返回和权限/额度影响。
-
-## 使用原则
-
-本 Skill 是模型可自动调用的路由入口。正常场景只加载一个匹配 SOP；只有跨 SOP 的任务才按顺序加载多个，并保留每个阶段的真实返回和完成标准。
+想了解为什么这样做，再看 [任务地图](references/core-sop-map.md) 或 [官方资料](references/official-sources.md)。
