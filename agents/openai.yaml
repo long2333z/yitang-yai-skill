@@ -1,0 +1,4 @@
+interface:
+  display_name: "一堂 CLI"
+  short_description: "路由 whyai CLI 任务并执行固定 SOP"
+  default_prompt: "使用 $yitang-cli 先判断一堂任务类型，再读取一个匹配的独立 SOP 完成它。"
