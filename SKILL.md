@@ -11,15 +11,15 @@ description: "当用户需要通过 whyai CLI 使用一堂 YAI 时使用：检�
 
 | 你要做什么 | 先读这里 |
 |---|---|
-| 检查 CLI、Gateway、登录、套餐资格 | [环境准入](sops/access.md) |
-| 找课程、读课程章节、查一堂知识，或复盘作业 | [学习与知识](sops/learning.md) |
-| 找官方 Partner、多个 Partner 接力、封装自己的 Partner | [Partner 工作](sops/partner.md) |
-| 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](sops/execution.md) |
-| 回看、继续、导出对话，或处理命令异常 | [对话与故障](sops/conversation.md) |
+| 检查 CLI、Gateway、登录、套餐资格 | [环境准入](references/sops/access.md) |
+| 找课程、读课程章节、查一堂知识，或复盘作业 | [学习与知识](references/sops/learning.md) |
+| 找官方 Partner、多个 Partner 接力、封装自己的 Partner | [Partner 工作](references/sops/partner.md) |
+| 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](references/sops/execution.md) |
+| 回看、继续、导出对话，或处理命令异常 | [对话与故障](references/sops/conversation.md) |
 
 ## 所有任务都遵守
 
-1. 先走 [环境准入](sops/access.md)，再做真实 CLI 调用；浏览器授权完成不代表 CLI 已可用。
+1. 先走 [环境准入](references/sops/access.md)，再做真实 CLI 调用；浏览器授权完成不代表 CLI 已可用。
 2. 课程、作业、笔记、Partner 和会话的 ID 都从本次返回中取得，不靠猜测。
 3. 上传、创建、分享、删除或发布前，先说清对象和影响，取得用户同意。
 4. 交付时说清三件事：已经确认的事实、自己的判断、还需要确认的内容。

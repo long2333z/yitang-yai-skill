@@ -6,11 +6,11 @@
 
 | 想做的事 | 打开哪一页 |
 | --- | --- | --- |
-| 检查版本、登录、Gateway 或权益 | [先确认能不能用](sops/access.md) |
-| 找课程、作业或以前的笔记 | [学习与知识](sops/learning.md) |
-| 选择 Partner，或让多个 Partner 接力 | [Partner 工作](sops/partner.md) |
-| 带着材料完成一项工作，并保存结果 | [任务执行与资产](sops/execution.md) |
-| 继续、分支、导出、分享或清理对话 | [对话与故障](sops/conversation.md) |
+| 检查版本、登录、Gateway 或权益 | [先确认能不能用](references/sops/access.md) |
+| 找课程、作业或以前的笔记 | [学习与知识](references/sops/learning.md) |
+| 选择 Partner，或让多个 Partner 接力 | [Partner 工作](references/sops/partner.md) |
+| 带着材料完成一项工作，并保存结果 | [任务执行与资产](references/sops/execution.md) |
+| 继续、分支、导出、分享或清理对话 | [对话与故障](references/sops/conversation.md) |
 
 ## 三份官方资料
 
@@ -26,7 +26,7 @@
 
 ```text
 SKILL.md                         # 给 Codex 的任务入口
-sops/                            # 每类任务的操作说明
 references/                      # 官方资料和任务地图
+references/sops/                 # 每类任务的操作说明
 skill-optimizer-records/         # 维护记录，不需要日常阅读
 ```
