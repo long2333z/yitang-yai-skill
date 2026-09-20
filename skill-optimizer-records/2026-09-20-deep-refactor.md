@@ -41,4 +41,4 @@
 ## P006 验收
 
 - [x] `name`、展示名称、默认调用名与 README 已统一为 `yitang-yai-skill` / “一堂 YAI Skill”。
-- [ ] GitHub 仓库已改名为 `long2333z/yitang-yai-skill`，本地 remote 已更新并完成推送核验。
+- [x] GitHub 仓库已迁移为 `long2333z/yitang-yai-skill`，本地 remote 已更新并完成推送核验；安装目录已迁移为 `yitang-yai-skill`。
