@@ -12,22 +12,6 @@
 | 用 Partner 完成真实任务、上传材料、保存可复用结论 | [任务执行与资产](sops/execution.md) | 结果、来源、限制、下一步与可定位资产 |
 | 续聊、改写、分支、导出、分享、删除或排错 | [对话与故障](sops/conversation.md) | 边界清楚且可回查的会话处理结果 |
 
-## 使用方式
-
-将仓库根目录安装为 Codex 的一个 Skill，例如放入：
-
-```text
-<CODEX_HOME>/skills/yitang-cli/
-```
-
-仓库根目录就是 Skill 根目录；不要再套一层 `yitang-cli/`。安装后，可以直接说：
-
-```text
-使用 $yitang-cli 查一下某课程的方法，并给出能用于当前项目的步骤。
-```
-
-或直接提出自然语言任务，例如“帮我选择适合梳理需求的 Partner”“继续这段一堂对话并导出”“检查 whyai 是否在正式环境可用”。Skill 会先判断目标，再加载一条匹配 SOP；跨阶段任务才顺序加载多条。
-
 ## 首次使用 whyai
 
 CLI 的完整安装和登录说明以 [一堂 CLI 使用指南](https://yitanger.feishu.cn/wiki/XoFcwMmotigm7Ikv4RQc9TfQn0g) 为准。开始真实任务前，按 [SOP-00](sops/access.md) 完成以下验证链：
