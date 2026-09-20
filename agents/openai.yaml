@@ -1,4 +1,4 @@
 interface:
   display_name: "一堂 YAI Skill"
-  short_description: "把一堂课程、Partner 和资产变成可验证的真实工作流"
-  default_prompt: "使用 $yitang-yai-skill：先从课程中挖掘适用方法，再结合 Partner 和真实任务验证，最后沉淀可复用结果。"
+  short_description: "按核心场景把一堂课程、Partner 和资产变成真实工作流"
+  default_prompt: "使用 $yitang-yai-skill：先判断我是要走课程到工作、Partner 协作交付还是稳定流程封装；再按当前阶段执行，并沉淀可复用结果。"

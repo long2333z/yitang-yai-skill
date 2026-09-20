@@ -12,9 +12,11 @@ description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和�
 | 你要做什么 | 先读这里 |
 |---|---|
 | 检查 CLI、Gateway、登录、套餐资格 | [环境准入](references/sops/access.md) |
-| 挖课程内容、提炼方法、查课程/作业/笔记，或把所学用到任务 | [课程方法与知识](references/sops/learning.md) |
-| 找官方 Partner、多个 Partner 接力、封装自己的 Partner | [Partner 工作](references/sops/partner.md) |
-| 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](references/sops/execution.md) |
+| 从课程中找到方法，并用于一个真实问题 | [课程到工作](references/sops/scenarios/course-to-work.md) |
+| 用一个或多个 Partner 把材料做成结果 | [Partner 协作交付](references/sops/scenarios/partner-delivery.md) |
+| 把已经验证的重复做法封装为 Partner 或工作流 | [稳定流程封装](references/sops/scenarios/workflow-productization.md) |
+| 只查询课程、提炼方法或做一次小验证 | [课程单步路由](references/sops/learning.md) |
+| 只需用已选 Partner 完成一次工作，或保存结果/笔记 | [任务执行与资产](references/sops/execution.md) |
 | 回看、继续、导出对话，或处理命令异常 | [对话与故障](references/sops/conversation.md) |
 
 ## 所有任务都遵守
