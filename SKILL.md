@@ -1,6 +1,6 @@
 ---
 name: yitang-yai-skill
-description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和个人资产用进真实工作时使用。通过 whyai CLI 连接和操作 YAI；先挖掘课程内容、校准方法，再完成任务、复盘并沉淀可复用工作流。"
+description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和个人知识资产用于真实工作时使用。先按任务挖课程和方法，再通过 whyai CLI 读取或调用一堂服务，完成小范围验证、复盘与沉淀。"
 ---
 
 # 一堂 YAI Skill
@@ -25,3 +25,5 @@ description: "当用户希望把一堂 YAI 的课程方法、Partner 协作和�
 4. 交付时说清三件事：已经确认的事实、自己的判断、还需要确认的内容。
 
 想了解为什么这样做，再看 [任务地图](references/core-sop-map.md) 或 [官方资料](references/official-sources.md)。
+
+读取课程时遇到 ID 不匹配、内容为空，或需要判断该找案例、模板、笔记还是作业，先读 [课程内容挖掘](references/course-content-discovery-2026-09-20.md)。
