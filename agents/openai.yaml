@@ -1,4 +1,4 @@
 interface:
-  display_name: "一堂 CLI"
-  short_description: "路由并验证 whyai 的学习、Partner、会话与资产 SOP"
-  default_prompt: "使用 $yitang-cli 先通过准入检查判断任务类型，只加载一条匹配 SOP，并把事实、推断和未决项分开。"
+  display_name: "YAI CLI 工作流"
+  short_description: "通过 whyai 处理 YAI 的课程、Partner、会话与资产任务"
+  default_prompt: "使用 $yai-cli-workflows 完成一项 YAI/一堂 CLI 任务：先选择匹配 SOP，再区分运行事实、推断和未决项。"
