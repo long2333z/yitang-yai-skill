@@ -56,6 +56,8 @@
 
 ## P008 验收
 
-- [ ] SOP 已迁移到 `references/sops/`，所有入口链接有效。
-- [ ] 源码、GitHub 和安装目录均使用 `yitang-yai-skill` 身份。
-- [ ] 已完成结构校验、推送与本机同步。
+- [x] SOP 已迁移到 `references/sops/`，所有入口链接有效。
+- [x] 活动源码、GitHub 和安装目录均使用 `yitang-yai-skill` 身份。
+- [x] 已完成结构校验、推送与本机同步。
+
+遗留：`X:\obsidian\Mark\yitang-skills` 是 Windows 改名时留下的空 `.git` 与重复 SOP 文件；已逐个核验没有独有内容，但当前执行环境不允许删除。它不再是可用 Git 工作区，后续可由用户在资源管理器中删除。
