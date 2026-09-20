@@ -23,6 +23,7 @@ description: "路由一堂/YAI 的 whyai CLI 任务；用户提到一堂、YAI�
 2. 需要业务调用时运行 `whyai --json status`，确认 `gateway=https://ai.yitang.top`、`environment=prod` 和登录状态。
 3. 只有用户明确要求登录/认证时，才运行 `whyai login --gateway https://ai.yitang.top`；浏览器授权由用户完成。
 4. 命令帮助和实际返回是当前版本的执行事实；官方资料只用于解释产品意图、场景和背景。资料入口见 [官方资料引用](references/official-sources.md)。
+5. 需要分析或调整核心 SOP 时，先读取 [核心 SOP 证据映射](references/core-sop-map.md) 和其引用的三个本地快照，再回到匹配的独立 SOP。
 
 ## 共享边界
 
