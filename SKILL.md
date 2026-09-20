@@ -1,9 +1,9 @@
 ---
-name: yai-cli-workflows
-description: "Use for YAI/一堂 tasks completed through the whyai CLI: verify CLI access, retrieve YAI course, homework, or note data, work with a YAI Partner or conversation, or save/export a YAI result. Do not use for general learning advice or unrelated AI/Partner tasks."
+name: yitang-yai-skill
+description: "Use for Yitang YAI tasks completed with the whyai CLI: verify access, retrieve YAI course, homework, or note data, work with YAI Partners or conversations, and save or export YAI results. Do not use for general learning advice or unrelated AI/Partner tasks."
 ---
 
-# YAI CLI 工作流
+# 一堂 YAI Skill
 
 本入口只做意图识别、准入检查和独立 SOP 路由。不要在这里展开课程、Partner、笔记或 CLI 命令手册；按下表只读取一个匹配的独立 SOP。
 

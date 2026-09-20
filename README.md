@@ -1,4 +1,4 @@
-# YAI CLI 工作流 Skill
+# 一堂 YAI Skill
 
 面向一堂/YAI/whyai 的 Codex 路由 Skill：按任务选择独立 SOP。
 

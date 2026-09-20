@@ -13,6 +13,7 @@
 | P003 | 根 Skill 混合路由与操作细节。 | 渐进加载边界不清。 | 简单任务也会加载无关命令/风险。 |
 | P004 | 运行环境的 CLI 缺失没有被显式作为准入分支。 | 把历史安装/登录与本次可执行状态混淆。 | 容易错误宣称当前 Gateway 或版本已验证。 |
 | P005 | `name` 与 description 把产品、CLI 和泛学习词混在一起。 | 顶层发现指针没有以稳定工具入口和专属操作边界组织。 | 可能误触发泛学习、泛 Partner 或非 YAI 的 AI 任务。 |
+| P006 | 名称与 GitHub 仓库身份不一致。 | 机器名已改为 YAI CLI 工作流，但用户选择以“一堂 YAI Skill”作为统一品牌。 | 调用名、展示名和仓库地址不易对应。 |
 
 ## 改动
 
@@ -20,7 +21,8 @@
 - 新增“证据到执行”地图，覆盖 R0 准入、R1 方法学习、R2 Partner、R3 接力、R4 执行、R5 会话、R6 资产/封装。
 - 重写五份独立 SOP：准入、学习、Partner、执行、会话；每条包含适用范围、步骤/分支和完成标准。
 - 根 Skill 限缩为路由与共享护栏；未将官方 CLI 说明复制进根文件。
-- P005：改为 `yai-cli-workflows`，以 `whyai` CLI 作为稳定入口；description 仅覆盖 YAI/一堂专属的准入、数据读取、Partner/会话、保存/导出四类动作，并排除泛学习和非 YAI Partner 任务。
+- P005：description 以 `whyai` CLI 作为稳定入口，仅覆盖一堂 YAI 专属的准入、数据读取、Partner/会话、保存/导出四类动作，并排除泛学习和非 YAI Partner 任务。
+- P006：统一目标身份为 `yitang-yai-skill`；同步前置 `name`、展示名称、默认调用名与 README 标题。GitHub 仓库改名待已登录网页会话执行后，再更新本地 remote。
 
 ## 验收清单
 
@@ -31,7 +33,12 @@
 
 ## P005 验收
 
-- [x] 名称表达 YAI CLI 工作流，而不是平台名与泛任务的混合标签。
+- [x] 名称表达一堂 YAI 的统一 Skill 身份，而不是平台名与泛任务的混合标签。
 - [x] description 覆盖四个独立触发分支，并限定为 YAI/一堂专属的 `whyai` 操作。
 - [x] 默认提示、展示名称和 README 与新身份一致。
 - [x] 已完成结构校验、提交、推送与安装目录同步。
+
+## P006 验收
+
+- [x] `name`、展示名称、默认调用名与 README 已统一为 `yitang-yai-skill` / “一堂 YAI Skill”。
+- [ ] GitHub 仓库已改名为 `long2333z/yitang-yai-skill`，本地 remote 已更新并完成推送核验。
