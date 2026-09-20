@@ -1,14 +1,12 @@
 # 官方资料
 
-这三份资料是本 Skill 的依据。本地文件是按主题整理的阅读笔记，不是全文备份。
+这三份官方资料是本 Skill 的依据。实际操作时优先看当前官方页面与 CLI 返回。
 
-| 来源 | 适合解决什么问题 | 本地整理 |
+| 来源 | 适合解决什么问题 |
 | --- | --- | --- |
-| [一堂 CLI 使用指南](https://yitanger.feishu.cn/wiki/XoFcwMmotigm7Ikv4RQc9TfQn0g) | 正式 Gateway、登录、权益和 CLI 调用 | [CLI 要点](snapshots/cli-guide-2026-09-20.md) |
-| [YAI 使用指南](https://yitanger.feishu.cn/wiki/WPJWwKwI3iUCzqkGUzvc6i5MnNg) | 课程知识、Partner、输入、对话和笔记 | [YAI 使用要点](snapshots/yai-guide-2026-09-20.md) |
-| [YAI 一堂第一课](https://yitang.top/fs-doc/217da0c5f7d334b601c53526ed06f90d/MZFMd7mYPofbJ2xQhdEcS3Xrnvd) | 如何把方法、协作和资产变成稳定工作流 | [第一课要点](snapshots/yai-first-class-2026-09-20.md) |
-
-另见 [课程内容挖掘](course-content-discovery-2026-09-20.md)：这是本机通过正式 CLI 做的只读能力观察，不包含账号课程清单或个人数据。
+| [一堂 CLI 使用指南](https://yitanger.feishu.cn/wiki/XoFcwMmotigm7Ikv4RQc9TfQn0g) | 正式 Gateway、登录、权益和 CLI 调用 |
+| [YAI 使用指南](https://yitanger.feishu.cn/wiki/WPJWwKwI3iUCzqkGUzvc6i5MnNg) | 课程知识、Partner、输入、对话和笔记 |
+| [YAI 一堂第一课](https://yitang.top/fs-doc/217da0c5f7d334b601c53526ed06f90d/MZFMd7mYPofbJ2xQhdEcS3Xrnvd) | 如何把方法、协作和资产变成稳定工作流 |
 
 ## 实际操作时以谁为准
 

@@ -4,7 +4,7 @@
 
 ## 按这个顺序做
 
-1. 运行 `whyai --version`。如果找不到命令，先按[官方安装说明](../snapshots/cli-guide-2026-09-20.md)检查安装和 PATH；这不是登录问题。
+1. 运行 `whyai --version`。如果找不到命令，先按[官方安装说明](https://ai.yitang.top/cli)检查安装和 PATH；这不是登录问题。
 2. 运行 `whyai --help`，或本次要用的子命令帮助。帮助页面才是当前版本的参数说明。
 3. 需要登录时，使用正式入口：`whyai login --gateway https://ai.yitang.top`。浏览器授权结束后，回到终端继续确认。
 4. 运行 `whyai --json status`。正式环境应显示 Gateway `ai.yitang.top` 和 `prod`。
