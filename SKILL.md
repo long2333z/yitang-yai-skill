@@ -11,16 +11,11 @@ description: "路由一堂/YAI 的 whyai CLI 任务；用户提到一堂、YAI�
 
 | 用户意图 | 读取的 SOP |
 |---|---|
-| 检查 CLI、Gateway、登录、套餐资格 | [环境准入](sops/00-access.md) |
-| 找课程、读课程章节、查一堂知识 | [课程与知识检索](sops/01-course-knowledge.md) |
-| 找官方 Partner 并完成一次任务 | [Partner 选择与调用](sops/02-partner.md) |
-| 有一个真实问题，希望从背景走到可用结果 | [单任务闭环](sops/03-task-loop.md) |
-| 需要多个 Partner 分工、接力或汇总 | [多 Partner 接力](sops/04-multi-partner.md) |
-| 保存、读取、下载或整理笔记/成果 | [笔记与资产沉淀](sops/05-notes-assets.md) |
-| 查作业、读答案、复盘训练结果 | [作业复盘](sops/06-homework-review.md) |
-| 创建、调试、优化或发布自己的 Partner | [自有 Partner 封装](sops/07-partner-builder.md) |
-| 回看、继续、导出、命名或分支对话 | [对话管理](sops/08-conversation.md) |
-| 命令失败、结果为空、权限或环境异常 | [故障收敛](sops/09-troubleshooting.md) |
+| 检查 CLI、Gateway、登录、套餐资格 | [环境准入](sops/access.md#sop-00-环境准入) |
+| 找课程、读课程章节、查一堂知识，或复盘作业 | [学习与知识](sops/learning.md) |
+| 找官方 Partner、多个 Partner 接力、封装自己的 Partner | [Partner 工作](sops/partner.md) |
+| 有一个真实问题，或要保存结果/笔记 | [任务执行与资产](sops/execution.md) |
+| 回看、继续、导出对话，或处理命令异常 | [对话与故障](sops/conversation.md) |
 
 ## 共享准入
 
