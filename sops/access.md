@@ -1,24 +1,39 @@
-# 一堂 CLI 访问与环境 SOP
+# SOP-00：CLI 准入、正式环境与故障定位
 
-## SOP-00 环境准入
+适用：安装/升级、版本、登录、Gateway、账户/权益、命令不可用，或任何 CLI 任务开始前。
 
-适用：任何需要实际调用一堂服务的任务。
+## 目标与完成标准
 
-1. `whyai --version`：确认命令可发现。
-2. 按任务运行一个最小帮助命令：`whyai --help`、`whyai yitang help` 或 `whyai chat --help`。
-3. `whyai --json status`：核对 Gateway、环境和登录状态。
-4. 未登录时，只有用户明确要求登录才运行 `whyai login --gateway https://ai.yitang.top`，把浏览器授权交给用户。
-5. 任务涉及额度或 CLI 资格时，再运行 `whyai --json billing access`；不要用普通账号登录成功推断 CLI 有资格。
+完成时必须报告下列之一：
 
-完成标准：环境和登录状态有实际返回；Gateway 为 `https://ai.yitang.top`、环境为 `prod`。缺少登录、权限或套餐资格时停止业务 SOP，并交付具体原因。
+- **可用**：可执行状态、版本、Gateway=`ai.yitang.top`、环境=`prod`、权益（如任务需要）和一次范围最小的实际只读调用；
+- **阻断**：准确阶段（命令/PATH、登录、Gateway、环境、权益、调用）与原始/脱敏错误。
 
-## SOP-01 能力发现
+浏览器授权成功本身不算完成；必须回到终端验证并运行实际查询。
 
-适用：固定业务命令不足以覆盖任务，需要确认当前 YAI CLI 暴露的能力。
+## 步骤
 
-1. 先阅读对应的 `whyai ... --help`。
-2. 只读能力发现使用 `whyai yitang capabilities --domain course --risk read --source yitang-fe` 或当前帮助支持的筛选条件。
-3. 用实际返回的 capability ID 执行 `whyai yitang describe CAPABILITY_ID`。
-4. 只有用户明确要求调用、且参数来自实际描述时，才执行 `whyai yitang call CAPABILITY_ID --param key=value`；涉及写入时遵守确认边界。
+1. 运行 `whyai --version`。找不到命令时，停止业务调用，检查正式安装是否完成和 PATH 是否包含安装位置；按 [官方安装说明](../references/snapshots/cli-guide-2026-09-20.md) 修复后从本步骤重试。
+2. 对本次命令运行 `whyai --help` 或相应子命令 `--help`，把当前帮助视为参数契约。仅在用户明确要求升级时再执行升级。
+3. 登录时使用正式 Gateway：`whyai login --gateway https://ai.yitang.top`。登录会打开浏览器授权，应等授权结束后回到终端。
+4. 读取 `whyai --json status` 和账户信息。期望终端 Gateway 为 `ai.yitang.top`、环境为 `prod`；任一不符即停止真实任务并重新登录/排查。
+5. 任务要读数据或调用 Partner 时，读取 `whyai --json billing access`。记录 eligibility/reason/tokens（不要泄露账号敏感信息）。
+6. 用任务所需域的**最小只读**命令验证，例如先检索一个明确关键词，而不是立刻拉全量列表或上传文件。
 
-完成标准：能力名称、风险、来源和参数契约都有实际返回；不把“能力可发现”表述为“业务已完成”。
+## 分支
+
+| 观察到的事实 | 处理 |
+| --- | --- |
+| `whyai` 不存在或无法执行 | 安装/PATH 分支；不是登录错误。本机 2026-09-20 的观察属于此分支，未据此重装。 |
+| 浏览器已授权但 status/调用仍失败 | 记录终端错误，重查 status 与账号；不要只报“已登录”。 |
+| Gateway 不是 `ai.yitang.top` 或环境非 prod | 停止业务数据调用，用正式 Gateway 重新登录；再次读 status。 |
+| `CLI_SUBSCRIPTION_REQUIRED` 或权益不足 | 用 account 与 billing access 区分账号、方案和 CLI 资格，再请用户处理权益。 |
+| 请求失败或帮助与快照不一致 | 保留目标、命令、时间、脱敏错误；以当前帮助/官方实时页校正，不猜参数。 |
+
+## SOP-01：能力探测
+
+仅在要调用新域、参数不确定或文档发生变化时执行。
+
+1. 用 `whyai yitang help` 或目标子命令帮助列出当前命令、风险和输出。
+2. 对实际任务选择一个只读能力，先确认返回字段与 ID。
+3. 将“当前帮助/返回事实”与快照的设计意图分开记录；冲突时以当前帮助为准并更新待优化记录。
